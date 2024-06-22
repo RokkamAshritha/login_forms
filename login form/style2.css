@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    font-family: cursive;
+  }
+  
+  .glow {
+    font-size: 80px;
+    color: #ff0000;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px rgb(255, 0, 128), 0 0 70px #ff0000;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #000000, 0 0 80px #000000;
+    }
+  }
